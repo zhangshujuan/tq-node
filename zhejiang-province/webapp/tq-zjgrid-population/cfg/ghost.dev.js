@@ -2,7 +2,7 @@ var log4js = require('log4js');
 
 log4js.loadAppender("dateFile");
 log4js.addAppender(log4js.appenderMakers['dateFile']({  
-    filename:"/workspace/tianque/nodejs/log/tq-zjgrid-population.log",  
+    filename:"/workspace/tq/nodejs/log/tq-zjgrid-population.log",  
     pattern: '.yyyy-MM-dd.log',alwaysIncludePattern: true,  
     layout: {
         type: 'pattern',

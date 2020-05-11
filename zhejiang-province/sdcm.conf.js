@@ -13,7 +13,7 @@ var config  = {
     umfs: 209715200,//上传文件总大小上限2m(2 * 1024 * 1024)
     debug: true, 
     ctcp: true, //是否启动websocket
-    ldir: '/workspace/tianque/nodejs/log', //日志文件目录  
+    ldir: '/workspace/tq/nodejs/log', //日志文件目录  
     fext: {
         'jpg': true,
         'jpeg': true,
@@ -87,8 +87,8 @@ var config  = {
         port: '5524',
         type: 'dscm'  
     }, 
-    fdir:'/workspace/tianque/zhejiang-province/nodejs/fle', //前端上传文件保存的临时目录
-    dcfg:'/workspace/tianque/zhejiang-province/dist'//前端请求资源文件本地存放路径
+    fdir:'/workspace/tq/zhejiang-province/nodejs/fle', //前端上传文件保存的临时目录
+    dcfg:'/workspace/tq/zhejiang-province/dist'//前端请求资源文件本地存放路径
 };
 
 module.exports = config;
