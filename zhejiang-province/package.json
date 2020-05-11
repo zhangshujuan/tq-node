@@ -23,7 +23,7 @@
     "cfork": "1.2.4",
     "connect-redis": "^3.0.1",
     "cookie-parser": "^1.4.3",
-    "debug": "2.2.0",
+    "debug": "2.6.9",
     "easy-monitor": "^2.2.1",
     "express": "4.12.4",
     "express-session": "^1.12.1",
