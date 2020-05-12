@@ -1,9 +1,3 @@
-/**
- * @email   289784710@qq.com
- * @author  zhangshujuan
- * @date    2020-05-8
- *
- */
 var ejs = require('./sdcm.eejs.js');  
 var iset = require('./sdcm.iset.js');
 var conf = require('./sdcm.conf.js');

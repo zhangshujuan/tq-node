@@ -1,9 +1,3 @@
-/**
- * @email   289784710@qq.com
- * @author  zhangshujuan
- * @date    2020-05-8
- *
- */
 var conf = require('./sdcm.conf.js'); 
 var sock = require('./sdcm.sock.js');
 

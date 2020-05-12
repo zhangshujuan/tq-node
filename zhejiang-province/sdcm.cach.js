@@ -1,13 +1,8 @@
-/**
- * @email   289784710@qq.com
- * @author  zhangshujuan
- * @date    2020-05-8
- *
- */
 var conf = require('./sdcm.conf.js');  
-var ioredis = require('ioredis'); 
-var session = require('express-session');
-var wildcard = require('wildcard2');
+var ioredis = require('ioredis');//性能为中心，功能齐全的，支持Redis >= 2.6.12 and (Node.js >= 6).
+//redis是单线程作业，所以不管查询任务是由一个链接发来的还是多个链接发来的，redis是串行的执行。并通过当前的链接返回客户端。nodejs接受redis的返回后，不管是不是并行，都要等主线程空闲下来才能一个个处理服务器返回的数据。
+var session = require('express-session');//https://www.expressjs.com.cn/en/resources/middleware/session.html
+var wildcard = require('wildcard2');//通配符是一个JavaScript库，用于在Node.js服务器和前端之间创建API。使用通配符，创建API端点就像创建JavaScript函数一样容易
 var util = require("util"); 
 var noop = function(){};
 

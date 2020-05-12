@@ -1,13 +1,7 @@
-/**
- * @email   289784710@qq.com
- * @author  zhangshujuan
- * @date    2020-05-8
- *
- */
 var ftp = require('ftp'); 
 var path = require('path');
 var async = require('async');
-var multiparty = require('multiparty');
+var multiparty = require('multiparty');// Multiparty是用来解析FormData数据的一款插件 https://www.npmjs.com/package/multiparty
 
 var load = require('./sdcm.util.js').loadConf; 
 var last = require('./sdcm.util.js').loadLast;

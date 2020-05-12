@@ -1,9 +1,3 @@
-/**
- * @email   289784710@qq.com
- * @author  zhangshujuan
- * @date    2020-05-8
- *
- */
 var co = require('co');
 var fs = require('fs'); 
 var ftp = require('ftp');

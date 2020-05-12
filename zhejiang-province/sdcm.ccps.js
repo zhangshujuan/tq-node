@@ -1,11 +1,5 @@
-/**
- * @email   289784710@qq.com
- * @author  zhangshujuan
- * @date    2020-05-8
- *
- */
 const ioredis = require('ioredis');
-const Server = require('socket.io')
+const Server = require('socket.io')//支持实时，双向和基于事件的通信。 https://www.jianshu.com/p/2cfb83d30a56 https://zhuanlan.zhihu.com/p/29148869
 
 var conf = require("./sdcm.conf.js");
 var logj = require('./sdcm.logj.js');
@@ -15,10 +9,10 @@ var sock = require('./sdcm.sock.js');
  * Module dependencies.
  */
 
-var uid2 = require('uid2');
-var msgpack = require('msgpack-lite');
-var Adapter = require('socket.io-adapter');
-var debug = require('debug')('socket.io-redis');
+var uid2 = require('uid2');//对于文档文件，UID2确定文档类型(应用程序数据文件或.aif文件)；对于可执行代码文件，UID2确定可执行文件的类型（.app、.dll、.tsy）；
+var msgpack = require('msgpack-lite');//快速的纯JavaScript MessagePack编码器和解码器 https://www.npmjs.com/package/msgpack-lite
+var Adapter = require('socket.io-adapter');//该模块不适合最终用户使用，但可以用作从您可能要构建的其他适配器继承的接口。https://github.com/socketio/socket.io-adapter
+var debug = require('debug')('socket.io-redis');//https://github.com/socketio/socket.io-redis 
 var async = require('async');
 
 /**

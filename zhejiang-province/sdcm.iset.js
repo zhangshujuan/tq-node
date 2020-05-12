@@ -1,9 +1,3 @@
-/**
- * @email   289784710@qq.com
- * @author  zhangshujuan
- * @date    2020-05-8
- *
- */
 var getContextName = require('./sdcm.util.js').getContextName; 
 var getClientIp = require('./sdcm.util.js').getClientIp;  
 var conf = require('./sdcm.conf.js');
