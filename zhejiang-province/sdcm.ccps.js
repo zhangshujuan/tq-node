@@ -1,3 +1,6 @@
+/**
+ * websocket主要用于聊天即时通讯
+ */
 const ioredis = require('ioredis');
 const Server = require('socket.io')//支持实时，双向和基于事件的通信。 https://www.jianshu.com/p/2cfb83d30a56 https://zhuanlan.zhihu.com/p/29148869
 

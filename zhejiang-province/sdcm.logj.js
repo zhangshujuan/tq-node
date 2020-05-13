@@ -1,3 +1,6 @@
+/**
+ * 日志
+ */
 var conf = require('./sdcm.conf.js');
 var log4js = require('log4js');
 

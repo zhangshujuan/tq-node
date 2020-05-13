@@ -1,4 +1,5 @@
 /*
+ * ejs模板 渲染页面用的，基本上用不上
  * EJS Embedded JavaScript templates
  * Copyright 2112 Matthew Eernisse (mde@fleegix.org)
  *

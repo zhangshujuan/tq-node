@@ -1,3 +1,6 @@
+/**
+ * 请求处理
+ */
 var co = require('co');
 var fs = require('fs'); 
 var ftp = require('ftp');
@@ -31,6 +34,7 @@ sock.next = function(cfg, itf, req, res, fld, fle,fuc) {
 sock.prepare = function (citf, param, user) {
      var options = {hostname: citf.host, port: citf.port, path: citf.iurl, method: citf.meth,headers:null};
      options.headers={'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8','user':user};
+     console.log("sock====>",citf)
      if(citf.type == 'sdcm') {
         options.headers={'claz':param.claz};
      } else {
@@ -305,6 +309,7 @@ sock.request = function(cfg, itf, req, res, fld, fle) {
 sock.ccps = function(citf, param, calfuc) {
     var options = {hostname: citf.host, port: citf.port, path: citf.iurl, method: citf.meth,headers:null};
     options.headers={'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8','user':user};
+    console.log("citf====>",citf)
     if(citf.meth.toUpperCase() == 'GET' && citf.type != 'sdcm'){
         options.path = citf.iurl+"?"+qs.stringify(param);    
     }else if(citf.type == 'sdcm') {

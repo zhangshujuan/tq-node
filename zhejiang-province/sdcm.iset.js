@@ -1,3 +1,6 @@
+/**
+ * 请求初始化参数
+ */
 var getContextName = require('./sdcm.util.js').getContextName; 
 var getClientIp = require('./sdcm.util.js').getClientIp;  
 var conf = require('./sdcm.conf.js');

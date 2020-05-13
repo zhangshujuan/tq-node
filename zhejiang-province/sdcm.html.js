@@ -1,3 +1,6 @@
+/**
+ * 服务端渲染页面用的。基本上用不上
+ */
 var ejs = require('./sdcm.eejs.js');  
 var iset = require('./sdcm.iset.js');
 var conf = require('./sdcm.conf.js');

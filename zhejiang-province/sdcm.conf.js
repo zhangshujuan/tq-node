@@ -1,3 +1,6 @@
+/**
+ * 基础配置
+ */
 var path = require('path');
 
 var config  = {   
@@ -23,39 +26,39 @@ var config  = {
     //    keepalive: 10000,
     //    path: ""
     //},
-    coss:{
-        object: "test",
-        bucket: "baizu-res",
-        craa: {
-            region:"oss-cn-shanghai",
-            accessKeyId:"LTAIZ8cgd0CsaFXE",
-            accessKeySecret:"lujTzzVrzeVudFs2nIprAdwfpxWjsI"
-        }
-    },
+    // coss:{
+    //     object: "test",
+    //     bucket: "baizu-res",
+    //     craa: {
+    //         region:"oss-cn-shanghai",
+    //         accessKeyId:"LTAIZ8cgd0CsaFXE",
+    //         accessKeySecret:"lujTzzVrzeVudFs2nIprAdwfpxWjsI"
+    //     }
+    // },
     cach:[ //session弃用redis集群设置
         {
             port: 6379,
             host: '127.0.0.1'
         },
     ],
-    ccps:{
-        enabled: false,
-        cluster: false,
-        namespace:"sdcmnp",
-        link:"sdcmlk",
-        chat:"dscm",
-        sync:{
-            addr:"",
-            port:5524,
-            iurl:""
-        },
-        auth:{
-            auth:"auth",
-            addr:"",
-            port:"",
-            iurl:""
-        }
-    },    
+    // ccps:{
+    //     enabled: false,
+    //     cluster: false,
+    //     namespace:"sdcmnp",
+    //     link:"sdcmlk",
+    //     chat:"dscm",
+    //     sync:{
+    //         addr:"",
+    //         port:5524,
+    //         iurl:""
+    //     },
+    //     auth:{
+    //         auth:"auth",
+    //         addr:"",
+    //         port:"",
+    //         iurl:""
+    //     }
+    // },    
     sess:{//session相关的参数设置，建议整站用一个顶级域名，方便session管理
         domain: [
             ["*.zudeapp.com", ".zudeapp.com"],
@@ -66,7 +69,7 @@ var config  = {
         cluster: false,//redis是否要集群
         time: 600000 //10分钟
     },
-    cacl:{
+    // cacl:{
         //"webpc":{
         //    allow:["*.cnaidai.com"],
         //    deny:[""]
@@ -74,13 +77,13 @@ var config  = {
         //"webchat":{
         //    allow:["wechat.cnaidai.com"]
         //}
-    },    
-    code: {//验证码采用后端服务生成可以是dscm服务或者http服务
-        path: '/verifyService?actn=code',
-        hostname: '192.168.0.72',
-        port: '5524',
-        type: 'dscm'  
-    }, 
+    // },    
+    // code: {//验证码采用后端服务生成可以是dscm服务或者http服务
+    //     path: '/verifyService?actn=code',
+    //     hostname: '192.168.0.72',
+    //     port: '5524',
+    //     type: 'dscm'  
+    // }, 
     fdir:'/workspace/tq/zhejiang-province/nodejs/fle', //前端上传文件保存的临时目录
     dcfg:'/workspace/tq/zhejiang-province/dist'//前端请求资源文件本地存放路径
 };

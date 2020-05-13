@@ -1,3 +1,6 @@
+/**
+ * 文件上传需要
+ */
 var ftp = require('ftp'); 
 var path = require('path');
 var async = require('async');

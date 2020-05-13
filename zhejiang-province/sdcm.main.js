@@ -1,3 +1,6 @@
+/**
+ * 入口
+ */
 var http = require('http');
 var express = require('express');//https://www.expressjs.com.cn/4x/api.html#app
 var cluster = require('cluster');//单个 Node.js 实例运行在单个线程中。 为了充分利用多核系统，有时需要启用一组 Node.js 进程去处理负载任务。cluster 模块可以创建共享服务器端口的子进程。http://nodejs.cn/api/cluster.html
@@ -50,7 +53,7 @@ function createSdcmObject() {
     // 解析解析JSON格式application/json
     app.use(bodyParser.json());
     // 解析 application/x-www-form-urlencoded
-    //app.use(bodyParser.urlencoded());
+    // app.use(bodyParser.urlencoded());
     // 解析二进制格式 自定义的 Buffer
     app.use(bodyParser.raw({ 
         type: 'text/xml'

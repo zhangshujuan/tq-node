@@ -1,3 +1,6 @@
+/**
+ * 访问目录结构的配置
+ */
 var logj = require('./sdcm.logj.js');
 var iset = require('./sdcm.iset.js');
 var conf = require('./sdcm.conf.js'); 

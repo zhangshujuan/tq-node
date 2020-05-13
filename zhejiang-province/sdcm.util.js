@@ -1,3 +1,6 @@
+/**
+ * 公用方法
+ */
 var eejs = require('./sdcm.eejs.js'); 
 var conf = require('./sdcm.conf.js');
 var logj = require('./sdcm.logj.js');
@@ -7,7 +10,6 @@ exports.getParameter = function getParameter(req,name) {
     if(value == null){
         value = req.body[name];
     }
-
     return value;
 }
 

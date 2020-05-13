@@ -1,3 +1,6 @@
+/**
+ * 普通的http请求都走这里
+ */
 var path = require('path');
 var async = require('async');
 var events = require('events');//events（事件触发器） http://nodejs.cn/api/events.html

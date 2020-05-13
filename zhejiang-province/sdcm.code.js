@@ -1,3 +1,6 @@
+/**
+ * code短信验证码
+ */
 var conf = require('./sdcm.conf.js'); 
 var sock = require('./sdcm.sock.js');
 
