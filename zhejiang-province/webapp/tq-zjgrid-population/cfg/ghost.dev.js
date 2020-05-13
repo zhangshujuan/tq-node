@@ -16,9 +16,19 @@ module.exports = {
     },
     http: {
         app:{
-            pref: '/app/public',
-            addr: 'dev.zudeapp.com',
-            port: 80
+            pref: '/doraemon-auth',
+            addr: '192.168.110.197',
+            port: 8081
+        },
+        //实有人口
+        population: {
+            addr: "192.168.110.124",
+            port: 3080
+        },
+        //组织场所
+        institution: {
+            addr: "192.168.110.124",
+            port: 1080
         },
         res:{
             addr: 'res.zudeapp.com',
@@ -31,20 +41,6 @@ module.exports = {
     },
     cenv: 'dev',
     dscm: {
-        //qc-dc-ceter
-        dccr: {
-            addr: "192.168.0.114",
-            port: 5524
-        },
-        //qc-pay-ceter
-        pycr: {
-            addr: "192.168.0.72",
-            port: 5525
-        },
-        //qc-rm-gate
-        rmcr: {
-            addr: "192.168.0.72",
-            port: 5526
-        }        
+        
     }
 }
