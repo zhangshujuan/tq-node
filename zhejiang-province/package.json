@@ -18,7 +18,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "ali-oss": "4.13.2",
-    "async": "1.2.1",
+    "async": "2.6.4",
     "body-parser": "1.13.3",
     "cfork": "1.2.4",
     "connect-redis": "^3.0.1",
