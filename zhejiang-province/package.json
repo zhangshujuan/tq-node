@@ -40,7 +40,7 @@
     "querystring": "0.2.0",
     "request": "2.58.0",
     "request-promise": "1.0.2",
-    "socket.io": "^1.7.2",
+    "socket.io": "^4.5.3",
     "socket.io-adapter": "0.5.0",
     "uid2": "0.0.3",
     "url": "0.10.3",
