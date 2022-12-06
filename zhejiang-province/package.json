@@ -25,7 +25,7 @@
     "cookie-parser": "^1.4.3",
     "debug": "2.2.0",
     "easy-monitor": "^2.2.1",
-    "express": "4.12.4",
+    "express": "4.17.3",
     "express-session": "^1.12.1",
     "fs": "0.0.2",
     "ftp": "0.3.10",
